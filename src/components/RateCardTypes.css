@@ -1,0 +1,206 @@
+.rate-card-types {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.type-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.type-header h1 {
+  color: #1a365d;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.type-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.type-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.type-option {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #64748b;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.type-option:hover {
+  color: #1a365d;
+  border-color: #1a365d;
+  transform: translateY(-1px);
+}
+
+.type-option.active {
+  background: #1a365d;
+  color: white;
+  border-color: #1a365d;
+}
+
+.rate-card-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-section h2 {
+  color: #1a365d;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.type-description {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.use-cases {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.use-cases h3 {
+  color: #1a365d;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.use-cases ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.use-cases li {
+  color: #64748b;
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.use-cases li::before {
+  content: "•";
+  color: #1a365d;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #1a365d;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.input-group .currency,
+.input-group .percent {
+  padding: 0.5rem;
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #1a365d;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background: #1a365d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.save-button:hover {
+  background: #2c5282;
+}
+
+.cancel-button {
+  background: white;
+  color: #1a365d;
+  border: 1px solid #1a365d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.cancel-button:hover {
+  background: #f1f5f9;
+}
+
+@media (max-width: 768px) {
+  .rate-card-types {
+    padding: 1rem;
+  }
+
+  .form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .save-button,
+  .cancel-button {
+    width: 100%;
+  }
+} 
